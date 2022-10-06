@@ -38,9 +38,9 @@ body{
     margin: auto;
 }
 
+
 header{
-    filter: blur(px);
-    backdrop-filter: blur(100px);
+   background: var(--main-color);
     position: fixed;
     width: 100%;
     top: 0;
@@ -49,18 +49,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
     padding: 25px 15%;
-    transition-duration: .3s;
+    transition-duration: .60s;
 }
 .logo{
-    display: flex;
-    border: none;
-    border-radius: 30px;
-    height: 50px;
-    line-height: 13px;
-    font-weight: 600;
-    padding: 20px;
     color: var(--text-color);
     font-size: 30px;
     font-weight: bold;
@@ -68,37 +60,23 @@ header{
 }
 .navbar{
     display: flex;
-    /*filter: blur(px);*/
-    /*backdrop-filter: blur(100px);*/
-    height: 50px;
-    line-height: 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 2px;
 }
 .navbar li{
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: bold;
     position: relative;
-    margin: 10px;
-}
-.navber a{
-    text-decoration: none;
-   color: var(--main-color);
-   font-weight: 26px;
+    color: var(--text-color);
+   font-weight: bold;
    font-size: 1rem;
    padding: 10px 20px;
-   margin: 20px;
+
+}
+.navber a{
 }
 .navbar a::after{
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    background: var(--main-color);
+    background: var(--text-color);
     left: 0;
     bottom: -4px;
     transition: ease .60s;
@@ -107,7 +85,7 @@ header{
     width: 100%;
 }
 #menu-icon{
-    font-size: 50px;
+    font-size: 32px;
     color: var(--text-color);
     z-index: 10001;
     cursor: pointer;
@@ -201,7 +179,7 @@ section{
     background-position: center;
     position: relative;
     display: grid ;
-    grid-template-columns: repeat(1, 2fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
 }
 .home-text h1{
@@ -223,29 +201,29 @@ span{
 .newslatter from{
     width: 380px;
     max-width: 100%;
-    position: absolute;
+    position: relative;
 }
 .newslatter form input:first-child{
     display: inline-block;
-    width: 40%;
+    width: 300px;
     outline: none;
     padding: 16px 140px 16px 15px;
     border: 2px solid var(--main-color);
-    border-radius: 50px;
+    border-radius: 30px;
 }
 .newslatter form input:last-child{
     position: absolute;
     display: inline-block;
     outline: none;
     border: none;
-    border-radius: 50px;
+    border-radius: 30px;
     background: var(--main-color);
     color: var(--text-color);
-    padding: 10px 30px 15px;
+    padding: 12px 30px;
     box-shadow: 0px 0px 6px #000, 0px 0px 14px #868686;
     cursor: pointer;
-   left: 530px;
-   top: 458px;
+    top: 399px;
+    right: 430px;
 }
 img{
     width: 350px;
@@ -299,7 +277,7 @@ header.sticky{
 }
 .sticky.h-btn{
     background: var(--text-color);
-    color: #000;
+    color: rgb(147, 18, 18);
 }
 .about{
     background: var(--secound-bg-color);
@@ -531,3 +509,87 @@ a{
     color: var(--secound-color);
     letter-spacing: 1px;
 }
+
+@media (max-width: 1270px){
+    header{
+        padding: 18px 4%;
+        transition: .2s;
+    }
+    header.sticky{
+        padding: 10px 4%;
+        transition: .2s;
+    }
+    section{
+        padding: 80px 4%;
+        transition: .2s;
+    }
+    :root{
+        --big-font: 4.8rem;
+        --h2-font: 3.8rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 990px){
+    .home{
+        height: 85vh;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        top: -800%;
+        left: 0;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .30s;
+    }
+    .navbar a{
+        display: block;
+        padding: 1.1rem;
+        margin: 1.3rem;
+        border-left: 2px solid var(--text-color);
+    }
+    .navbar a:hover{
+        background: var(--main-color);
+    }
+    .navbar a::after{
+        display: none;
+    }
+    .navbar .active{
+        top: 100%;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .about-img img{
+        max-width: 100%;
+        width: 700px;
+        height: auto;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact-img{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .contact-form{
+        order: 2;
+    }
+    .box img{
+        max-width: 100%;
+        width: 760px;
+        height: auto;
+    }
+    
+}
+
+
