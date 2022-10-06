@@ -135,7 +135,7 @@ header{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--main-color);
+    background-color: #9, 9, 9;
     border-radius: 34px;
     -webkit-transition: .4s;
     transition: .4s;
