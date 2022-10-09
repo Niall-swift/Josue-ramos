@@ -190,7 +190,26 @@ section{
     font-size: var(--big-font);
 }
 span{
-    color: var(--main-color);
+    transform: translate(-50%, -50%);
+    background: linear-gradient(-45deg,#3330E4, #00ADB5, #00FFF5, #F637EC, #F806CC, #17B794);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 6s ease-in-out infinite;
+    -moz-animation: animated_text 6s ease-in-out infinite;
+    -webkit-animation: animated_text 6s ease-in-out infinite;
+}
+
+@keyframes  animated_text {
+    0%{
+        background-position: 0px 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0px 50%;
+    }
 }
 .home-text h3{
     font-size: 25px;
