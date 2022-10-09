@@ -9,6 +9,7 @@
     scroll-padding-top: 3.5rem;
 }
 :root{
+     --cor-animada: #3330E4, #F637EC, #FBB454, #FAEA48;
     --cor-backgroun: #3A4750;
     --bg--foort: #000;
     --bg-color: #101010;
@@ -22,6 +23,7 @@
 }
 /*6107e7*/
 :root .dark{
+     --cor-animada: #3330E4, #00ADB5, #00FFF5, #F637EC, #F806CC, #17B794;
     --cor-backgroun: #222831;
     --bg--foort: #fff;
     --bg-color: #5e5a5a;
@@ -191,7 +193,7 @@ section{
 }
 span{
     transform: translate(-50%, -50%);
-    background: linear-gradient(-45deg,#3330E4, #00ADB5, #00FFF5, #F637EC, #F806CC, #17B794);
+    background: linear-gradient(-45deg, var(--cor-animada);
     background-size: 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
