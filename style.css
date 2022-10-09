@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -8,22 +9,22 @@
     scroll-behavior: smooth;
     scroll-padding-top: 3.5rem;
 }
+/* mode escuro ativo*/
 :root{
-     --cor-animada: #3330E4, #F637EC, #FBB454, #FAEA48;
     --cor-backgroun: #3A4750;
     --bg--foort: #000;
     --bg-color: #101010;
     --secun-bg-color: #191919;
     --text-color: #fff;
     --secound-color: #c6c9d8bf;
+    --cor-animada: #3330E4, #00ADB5, #00FFF5, #F637EC, #F806CC, #17B794;
     --main-color: #17B794;
     --big-font: 5.3rem;
     --h2-font: 4.2rem;
     --p-font: 1.1rem;
 }
-/*6107e7*/
+/* mode claro ativo*/
 :root .dark{
-     --cor-animada: #3330E4, #00ADB5, #00FFF5, #F637EC, #F806CC, #17B794;
     --cor-backgroun: #222831;
     --bg--foort: #fff;
     --bg-color: #5e5a5a;
@@ -31,6 +32,7 @@
     --text-color: rgb(9, 9, 9);
     --secound-color: #171920bf;
     --main-color:  #6107e7;
+    --cor-animada: #3330E4, #F637EC, #FBB454, #FAEA48;
 }
 body{
     transition-duration: 2.80s;
@@ -193,8 +195,8 @@ section{
 }
 span{
     transform: translate(-50%, -50%);
-    background: linear-gradient(-45deg, var(--cor-animada);
-    background-size: 400%;
+    background: linear-gradient(-45deg, var(--cor-animada));
+    background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animated_text 6s ease-in-out infinite;
@@ -213,6 +215,7 @@ span{
         background-position: 0px 50%;
     }
 }
+
 .home-text h3{
     font-size: 25px;
     margin-bottom: 55px;
@@ -636,5 +639,6 @@ a{
     }
     
 }
+
 
 
