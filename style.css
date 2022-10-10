@@ -65,32 +65,50 @@ header{
     letter-spacing: 1px;
 }
 .navbar{
+    border-radius: 32px;
+    background-color: transparent;
     display: flex;
-}
-.navbar li{
-    position: relative;
-    color: var(--text-color);
-   font-weight: bold;
-   font-size: 1rem;
-   padding: 10px 20px;
-
-}
-.navber a {
-    text-align: center;
-}
-.navbar a::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: var(--text-color);
-    left: 0;
-    bottom: -4px;
-    transition: ease .60s;
-}
-.navbar a:hover::after{
+    justify-content: space-between;
     width: 100%;
+    max-width: 400px;
 }
+.navbar i{
+    font-size: 25px;
+}
+.navbar i:hover{
+    color: var(--main-color);
+}
+
+
+.list-item {
+    padding: auto;
+   list-style-type: none;
+   flex-basis: 100%;
+   min-height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   color: var(--main-color);
+   transform: translateY(0);
+   transition: transform 0.5s ease, opacity 0.2s ease;
+   cursor: pointer;
+}
+
+.list-item-name {
+    top: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    transform: translate(0, -10px);
+    transition: transform 0.5s ease, opacity 0.2s ease;
+    opacity: 1;
+}
+.list-item:hover{
+    color: var(--main-color);
+    transform: translateY(-20px);
+}
+
 #menu-icon{
     font-size: 32px;
     color: var(--text-color);
@@ -193,7 +211,7 @@ section{
     margin: 20px 0px 20px;
     font-size: var(--big-font);
 }
-span{
+.rms {
     transform: translate(-50%, -50%);
     background: linear-gradient(-45deg, var(--cor-animada));
     background-size: 300%;
@@ -377,6 +395,19 @@ header.sticky{
     align-items: center;
     margin-top: 4.5rem;
     cursor: pointer;
+}
+.box video:hover{
+    transform: scale(1.1);
+    
+}
+
+.box video{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all .60s;
 }
 .box img{
     max-width: 100%;
@@ -639,6 +670,7 @@ a{
     }
     
 }
+
 
 
 
