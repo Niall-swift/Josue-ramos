@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -45,6 +46,7 @@ body{
 
 
 header{
+    opacity: 0;
     backdrop-filter: blur(45px);
     position: fixed;
     width: 100%;
@@ -56,6 +58,11 @@ header{
     justify-content: space-between;
     padding: 25px 15%;
     transition-duration: .60s;
+}
+header:hover{
+    transition: 2s;
+    opacity: 1;
+
 }
 .logo{
     color: var(--text-color);
@@ -222,9 +229,9 @@ section{
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animated_text 6s ease-in-out infinite;
-    -moz-animation: animated_text 6s ease-in-out infinite;
-    -webkit-animation: animated_text 6s ease-in-out infinite;
+    animation: animated_text 1s ease-in-out infinite;
+    -moz-animation: animated_text 5s ease-in-out infinite;
+    -webkit-animation: animated_text 9s ease-in-out infinite;
 }
 
 @keyframes  animated_text {
@@ -249,8 +256,23 @@ main p {
 .icone-parabaixo{
     display: flex;
     justify-content: center;
-
 }
+.icone-parabaixo:hover{
+    transform: translateY(4px);
+    animation: transform translatY(4px), 5s ease infinite;
+}
+@keyframes icone-parabaixo {
+    0%{
+        transform: translateY( -0% -50%);
+    }
+    50%{
+        transform: translateY( -100% -50%);
+    }
+    100%{
+        transform: translateY( -0% -50%);
+    }
+}
+
 main li  i{
     color: var(--text-color);
     margin-top: 10px;
@@ -520,25 +542,23 @@ form textarea{
     position: absolute;
     inset: 0;
     width: 10px;
-    height: 10px;
-   
+    height: 10px;   
 }
 
 .seletion{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #000;
+    background-color: rgb(58, 57, 57);
     color: #fff;
     height: 36px;
     width: 36px;
     margin: 0px 7px 0px;
-    padding: 6px;
-    border-radius: 8px;
+    padding: 1px;
+    border-radius: 50px;
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
     overflow: hidden;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.9);
-    transition: width 300ms ease-in-out 0s, background-color 300ms linear 200ms;
+    box-shadow: 5px 5px 8px rgba(42, 38, 38, 0.9);
+    transition: width 400ms ease-in-out 0s, background-color 400ms linear 300ms;
 }
 
 .icon{
@@ -550,6 +570,7 @@ form textarea{
 }
 a{
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .seletion:hover{
@@ -567,7 +588,7 @@ a{
 }
 
 .instagram:hover{
-    background: linear-gradient(#c506ff, #A149FA, #F07DEA);
+    background: linear-gradient(90deg, #f706c2, #c506ff, #A149FA, #F07DEA);
 }
 
 .whatsapp:hover{
@@ -642,13 +663,14 @@ a{
     }
     .navbar{
         position: absolute;
-        top: -900%;
+        top: -9000%;
         left: 0;
         flex-direction: column;
         background: var(--bg-color);
         text-align: left;
         transition: all .30s;
     }
+    .navbar li list-item
     .navbar a{
         display: block;
         padding: 1.1rem;
@@ -656,13 +678,13 @@ a{
         border-left: 2px solid var(--text-color);
     }
     .navbar a:hover{
-        background: var(--main-color);
+        background: transparent;
     }
     .navbar a::after{
         display: none;
     }
     .navbar .active{
-        top: 100%;
+        top: 700%;
     }
     .about{
         grid-template-columns: 1fr;
@@ -693,9 +715,5 @@ a{
     }
     
 }
-
-
-
-
 
 
