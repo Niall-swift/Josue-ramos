@@ -404,7 +404,7 @@ header.sticky{
     padding: 55px 30px;
     border-radius: 10px;
     cursor: pointer;
-    transition: all .35;
+    transition: all .25;
 }
 .row i{
    color: var(--main-color); 
@@ -423,11 +423,24 @@ header.sticky{
     font-size: var(--p-font);
 }
 .row:hover{
-    transition: all .60s;
-    box-shadow: 0px 0px 6px var(--main-color), 0px 0px 14px #868686;
+    transition: all .35s;
+    box-shadow: 0px 0px 30px var(--main-color), 0px 0px 20px #868686;
     transform: translateY(-8px);
     border: 2px solid var(--main-color);
     background: transparent;
+}
+.row img{
+    width: 100%;
+    align-items: center;
+}
+.linguagems img{
+    display: inline-block;
+    width: 100%;
+    height: 43px;
+    
+    
+
+
 }
 .portfolio .dark{
     background: #000;
@@ -473,7 +486,7 @@ header.sticky{
     margin-bottom: 15px;
 }
 .box img:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .contact{
@@ -715,5 +728,11 @@ a{
     }
     
 }
-
-
+.rato{
+    color: var(--main-color);
+    font-size: 48px;
+}
+.mobile{
+    color: var(--main-color);
+    font-size: 40px;
+}
