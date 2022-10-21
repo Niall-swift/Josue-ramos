@@ -1,7 +1,7 @@
+const header = document.querySelector("header");
 
-
-const header = Document.querySelector("header");
-
-Window.addEventListener ("scroll", function(){
-    header.classList.toggle ("stricky", Window.scrollY > 0);
+window.addEventListener ("scroll", function() {
+        header.classList.toggle ("sticky", window.scrollY > 0);
 });
+
+
