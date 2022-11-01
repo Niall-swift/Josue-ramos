@@ -20,23 +20,23 @@ const songs = [
   {
     name: "-F_F_M_",
     author: "Filipe Ret",
-    path: "/songs/[YT2mp3.info] - F_ F_ M_ (320kbps).mp3",
+    path: "[YT2mp3.info] - F_ F_ M_ (320kbps).mp3",
   },
   {
     Image:"/img/filipe_ret.webp",
     name: "Filipe Ret",
     author: "7 Meiota",
-    path: "/songs/[YT2mp3.info] - Filipe Ret ✦ 7 Meiota (Ft. Maneirinho & Cabelinho – Prod. Ian Girão) (320kbps).mp3",
+    path: "[YT2mp3.info] - Filipe Ret ✦ 7 Meiota (Ft. Maneirinho & Cabelinho – Prod. Ian Girão) (320kbps).mp3",
   },
   {
     name: "Filipe Ret",
     author: "Good Vibe",
-    path: "/songs/[YT2mp3.info] - Filipe Ret ✦ Good Vibe (Ft. Caio Luccas - Prod. Dallass) (320kbps).mp3",
+    path: "[YT2mp3.info] - Filipe Ret ✦ Good Vibe (Ft. Caio Luccas - Prod. Dallass) (320kbps).mp3",
   },
   {
     name: "Sonho Dos Cria",
     author: "Filipe Ret(Ft. Poze do Rodo - Prod. Nagalli)",
-    path: "/songs/[YT2mp3.info] - Filipe Ret ✦ Sonho Dos Cria (Ft. Poze do Rodo - Prod. Nagalli) (320kbps).mp3",
+    path: "[YT2mp3.info] - Filipe Ret ✦ Sonho Dos Cria (Ft. Poze do Rodo - Prod. Nagalli) (320kbps).mp3",
   },
   {
     name: "Guitar Electro Sport",
